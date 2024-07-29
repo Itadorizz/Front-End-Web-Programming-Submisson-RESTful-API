@@ -1,0 +1,64 @@
+body {
+  font-family: Montserrat, sans-serif;
+  margin: 0;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  background-color: #1a1b22;
+}
+nav {
+  position: sticky; /* membuat navbar menempel ke atas */
+  top: 0; /* posisi navbar di atas */
+  left: 0; /* posisi navbar di samping kiri */
+  width: 100%; /* lebar navbar 100% */
+  padding: 0 0 0 0;
+  background-color: #af2030; /* warna latar navbar */
+  color: #f9f9f9; /* warna teks navbar */
+  z-index: 1000; /* membuat navbar di atas konten lain */
+  height: 60px;
+  border-radius: 16px;
+}
+nav p {
+  background-color: #af2030;
+  color: #1a1b22;
+  padding: 2px 0;
+  text-align: center;
+  color: #f9f9f9;
+}
+note-form {
+  overflow-y: auto;
+  max-height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+note-form,
+note-list {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  overflow: visible;
+}
+footer {
+  background-color: #af2030;
+  color: #1a1b22;
+  padding: 0.2px 0;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+}
+
+p {
+  font-size: 1rem;
+  color: #f9f9f9;
+}
+@media (min-width: 600px) {
+  body {
+    grid-template-columns: 1fr; /* keep 1 column */
+  }
+}
